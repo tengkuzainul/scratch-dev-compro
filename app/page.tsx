@@ -5,6 +5,7 @@ import { GridPattern } from "@/components/ui/grid-pattern";
 import { cn } from "@/lib/utils";
 import { CaretRight } from "@phosphor-icons/react";
 import { BorderBeam } from "@/components/ui/border-beam";
+import ShinyText from "@/components/ui/shiny-text";
 
 export default function Home() {
   return (
@@ -22,10 +23,10 @@ export default function Home() {
       />
 
       {/* Hero Section */}
-      <main className="grow flex flex-col items-center justify-center px-4 pt-36 pb-16 text-center z-10 max-w-4xl mx-auto">
+      <main className="grow flex flex-col items-center justify-center px-4 pt-32 pb-16 text-center z-10 max-w-4xl mx-auto">
         {/* Top Badge */}
-        <div className="inline-flex items-center p-[3px] pr-4 rounded-full border border-white/10 bg-[#161224] backdrop-blur-md text-xs mb-8 relative overflow-hidden">
-          <span className="bg-[#7c3aed] text-white font-semibold px-3 py-1 rounded-full text-[10px] sm:text-xs tracking-wide mr-2">
+        <div className="inline-flex items-center p-[3px] pr-4 rounded-full border border-white/30 bg-[#E11D48]/5 backdrop-blur-md text-xs mb-3 relative overflow-hidden">
+          <span className="bg-[#E11D48]/80 text-white font-semibold px-2 py-1 rounded-full text-[10px] sm:text-xs tracking-wide mr-2">
             Only 2 spots left this month
           </span>
           <span className="text-zinc-300 font-medium hover:text-white transition-colors cursor-pointer flex items-center gap-1">
@@ -49,14 +50,24 @@ export default function Home() {
         </div>
 
         {/* Main Headline */}
-        <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-[#a78bfa] leading-[1.1] mb-6 max-w-3xl">
-          We Build Scalable Software for Startup
+        <h1 className="text-4xl sm:text-6xl md:text-7xl font-normal tracking-tight text-[#E11D48] leading-[1] mb-2 max-w-3xl">
+          Crafted from Scratch, Built to Scale.
         </h1>
 
         {/* Sub-headline */}
-        <p className="text-base sm:text-lg md:text-xl text-zinc-400 max-w-2xl mb-10 leading-relaxed font-light">
-          Leading full-stack developers specializing in custom website and mobile app solutions
-        </p>
+        <ShinyText
+          text="Leading full-stack developers specializing in custom website and mobile app solutions"
+          speed={2}
+          delay={0}
+          color="#b5b5b5"
+          shineColor="#ffffff"
+          spread={120}
+          direction="left"
+          yoyo={false}
+          pauseOnHover={false}
+          disabled={false}
+          className="text-base sm:text-lg md:text-xl max-w-2xl mb-10 leading-relaxed font-light"
+        />
 
         {/* CTA Buttons */}
         <div className="flex flex-row gap-4 mb-12 justify-center w-full sm:w-auto">
